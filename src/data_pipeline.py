@@ -6,7 +6,7 @@ Run in a Kaggle notebook/IPython session with the required dataset and artifacts
 """
 
 from __future__ import annotations
-
+from IPython.display import display
 
 # ================== ORIGINAL NOTEBOOK CELL 2 ==================
 import os, glob, json, hashlib, random, warnings
