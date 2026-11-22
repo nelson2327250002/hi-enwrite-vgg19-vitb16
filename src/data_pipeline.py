@@ -93,7 +93,10 @@ print("Berkas gambar di folder:", len(list(IMG_DIR.glob("*"))), "| folder luaran
 
 
 # ================== ORIGINAL NOTEBOOK CELL 5 ==================
-raw = pd.read_csv(META_CSV).drop(columns=["Unnamed: 0"])
+raw = pd.read_csv(META_CSV).drop(
+    columns=["Unnamed: 0"],
+    errors="ignore"
+)
 raw = raw.rename(columns={"image": "file", "Openness to Experience": "O", "Conscientiousness": "C",
                           "Extroversion": "E", "Agreeableness": "A", "Neuroticism": "N"})
 parsed = raw["file"].str.extract(r"^(\d+)([eh])\.jpe?g$")
