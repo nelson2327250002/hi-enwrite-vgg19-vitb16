@@ -23,7 +23,7 @@ sns.set_theme(style="whitegrid")
 plt.rcParams["figure.dpi"] = 100
 
 # ======================= KONTROL UTAMA =======================
-SMOKE_TEST = False           # True = uji cepat (2 epoch, fold 0). Ubah ke False setelah lolos untuk eksperimen penuh
+SMOKE_TEST = True            # Selaraskan dengan default notebook: uji cepat (2 epoch, fold 0); False untuk eksperimen penuh
 TIME_BUDGET_HOURS = None    # mis. 10.0 -> berhenti rapi sebelum batas sesi; lanjutkan di sesi berikutnya
 ARTIFACT_DIR = None         # mis. "/kaggle/input/nama-input/hienwrite_clean" bila pencarian otomatis gagal
 

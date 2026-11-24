@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS / editors
+.DS_Store
+.AppleDouble
+*.swp
+.vscode/
+.idea/
+
+# Environments and local secrets
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+
+# Large datasets, generated arrays, model weights and checkpoints
+data/raw/
+data/images/
+*.npy
+*.npz
+*.pt
+*.pth
+*.safetensors
+*.ckpt
+*.h5
+*.hdf5
+*.pkl
+*.joblib
+
+# Generated training run directories
+hienwrite_clean/
+hienwrite_runs/
+hienwrite_runs_smoke/
+lightning_logs/
+wandb/
+.tensorboard/

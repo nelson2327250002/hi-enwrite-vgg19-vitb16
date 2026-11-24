@@ -51,13 +51,13 @@ DHASH_N = 16
 # ====================== SELEKSI MANUAL (Bagian 2) ======================
 APPLY_MANUAL = True
 # Koreksi orientasi: sudut PIL (positif = putar berlawanan arah jarum jam), diterapkan SETELAH koreksi EXIF.
-# Hanya mengembalikan citra ke posisi tegak; tidak mengubah kemiringan huruf/garis dasar/spasi.
-# Empat entri di bawah terverifikasi visual pada berkas ini (teks vertikal). Proposal menyebut 10 citra:
-# sisanya (mis. terbalik 180°) tidak dapat dideteksi otomatis -> tambahkan dari daftar manual Anda.
-MANUAL_ROTATE = {"38e.jpeg": 90, "38h.jpeg": 90, "195e.jpeg": -90, "195h.jpeg": -90}
-# Penghapusan citra non-tulisan (mis. memuat wajah) atau salah-bahasa: {nama_berkas: alasan}. Berkas ini diperlakukan
-# "tidak tersedia" (masuk aturan berkas_hilang seperti pada Gambar 2 proposal) sehingga penulisnya dikeluarkan beserta pasangannya.
-MANUAL_REMOVE = {}            # contoh: {"123e.jpeg": "foto wajah"}
+# Empat kandidat orientasi yang ditampilkan pada A5 telah diperiksa secara visual dan sudah tegak.
+# Karena tidak ada koreksi rotasi yang terverifikasi, daftar dibiarkan kosong. Tambahkan entri hanya
+# setelah pemeriksaan visual memastikan file dan arah rotasi yang benar.
+MANUAL_ROTATE = {}
+# Penghapusan citra non-tulisan (mis. memuat wajah) atau salah-bahasa: {nama_berkas: alasan}.
+# Jangan isi hanya berdasarkan skor classifier; masukkan file hanya setelah pemeriksaan manual dan alasan terverifikasi.
+MANUAL_REMOVE = {}
 
 # ====================== ANGKA REFERENSI PROPOSAL V12 (Gambar 2 & Tabel 4) ======================
 # (penulis dibuang, citra dibuang, citra bermasalah, citra sehat ikut terbuang)
